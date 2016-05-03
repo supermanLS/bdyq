@@ -1,0 +1,384 @@
+body,ul,li,input{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	body,html{
+		height:100%;
+		overflow: hidden;
+	}
+	.box{
+		width: 100%;
+		height:100%;
+		/*background: url(images/bg.jpg)no-repeat;*/
+
+	}
+	.inner li:nth-child(1){
+		position: absolute;
+		left: 34%;
+		top:15%;
+		animation:move 3s linear alternate infinite; 
+	}
+	.inner li:nth-child(2){
+		position: absolute;
+		right:-20%;
+		top:0;
+		animation:aa 10s linear infinite; 
+	}
+	.inner li:nth-child(3){
+		position: absolute;
+		right: 20%;
+		top:20%;
+		animation:aa 40s linear infinite; 
+	}
+	.inner li:nth-child(4){
+		position: absolute;
+		left:0 ;
+		top:20%;
+		animation:aa 100s linear infinite; 
+	}
+	.inner li:nth-child(5){
+		position: absolute;
+		right: -10%;
+		top:45%;
+		animation:aa 300s linear infinite; 
+	}
+	@keyframes move{
+		0%{
+			transform:translateY(0);
+		}
+		100%{
+			transform:translateY(30px);
+		}
+	}
+	@keyframes aa{
+		0%{
+			transform:translateX(2%);
+		}
+		100%{
+			transform:translateX(-100%);
+		}
+	}
+	.nav{
+		width: 100%;
+		height:60px;
+		background:#168BD8;
+		position:fixed;
+		z-index: 999;
+	}
+	.head{
+		width: 1000px;
+		height:100%;
+		margin:0 auto;
+	}
+	.head>a{
+		display: block;
+		height:40px;
+		width: 120px;
+		margin-top:10px;
+		background:url(../images/bg.png) no-repeat;
+		float: left;
+	}
+	.head-middle{
+		float: left;
+		margin-left:60px; 
+	}
+	.head-middle li{
+		float: left;
+	}
+	.head-middle li a{
+		display: block;
+		width: 100px;
+		height: 28px;
+		padding-top: 32px;
+		color: #fff;
+		text-align: center;
+		font-size: 15px;
+	}
+	.headright{
+		float: right;
+		margin-top: 25px;
+	}
+	.headright a{
+		padding: 0 10px;
+		color: #fff;
+		font-size: 12px;
+	}
+	.baidu{
+		width: 501px;
+		height:158px;
+		background: url(../images/baidu.png)no-repeat;
+		position: absolute;
+		left: 180px;
+		top:100px;
+	}
+	.zuoxia,.youxia{
+		width: 265px;
+		height:175px;
+		background:url(../images/zx.png) no-repeat;
+		position: absolute;
+		bottom: 0;
+	}
+	.youxia{
+		background:url(../images/yx.png) no-repeat;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.lunchuan{
+		width: 242px;
+		height: 228px;
+		background:url(../images/lc.png) no-repeat;
+		position: absolute;
+		left: 329px;
+		top:310px;
+	}
+	.footer{
+		width: 100%;
+		height: 126px;
+		background-color:rgba(11, 108, 197,.7);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.jiantou{
+		width: 30px;
+		height:26px;
+		background: url(../images/jiantou.png) no-repeat;
+		position: absolute;
+		left: 50%;
+		margin-left:-30px;
+		bottom: 10%;
+		animation:BB .5s linear alternate infinite; 
+	}
+	@keyframes BB{
+		0%{
+			transform:translateY(0);
+		}
+		100%{
+			transform:translateY(10px);
+		}
+	}
+	.title{
+		width: 500px;
+		position: absolute;
+		left: -500px;
+		top:250px;
+		perspective:1200px;
+
+		
+	}
+	.section .lx{
+		animation:lx .5s ;
+		animation-fill-mode:forwards;
+	}
+	.title h3{
+		width: 66px;
+		height: 126px;
+		float: left;
+		background: url(../images/lx.png) no-repeat;
+		animation:xz 3s linear  infinite; 
+	}
+	@keyframes xz{
+		0%{
+			transform:rotateY(0);
+		}
+		50%{
+			transform:rotateY(0);
+		}
+		100%{
+			transform:rotateY(360deg);
+		}
+	}
+	.tnr{
+		margin-top: -15px;
+		margin-left: 86px;
+		/*float: left;*/
+	}
+	.tnr h4{
+		font-size: 34px;
+	    font-weight: 400;
+	    letter-spacing: 2px;
+	    line-height: 48px;
+	    margin-bottom: 6px;
+	    color:#fff;
+	}
+	.tnr p{
+	 font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    opacity: .8;
+    color: #fff;
+	}
+	.obj {
+		width: 444px;
+		height:427px;
+		background: url(../images/ban1.png);
+		position: absolute;
+		right: -444px;
+		top:180px;
+		
+	}
+	.section .ly{
+		animation:ly .5s forwards;
+		/*animation-fill-mode:forwards;*/
+	}
+	@keyframes lx{
+		0%{
+			left:50px ;
+			opacity:0;
+
+		}
+		
+		100%{
+			left:200px;
+			opacity: 1;
+		}
+	}
+	@keyframes ly{
+		0%{
+			right:0px ;
+			opacity:0;
+
+		}
+		
+		100%{
+			right:130px;
+			opacity: 1;
+		}
+	}
+	.btbox{
+		position: absolute;
+		bottom: 0;
+		left: 260px;
+		width: 44px;
+		height:44px;
+		background: #35b568;
+	}
+	.btbox1{
+		position: absolute;
+		bottom: 0;
+		left: 340px;
+		width: 88px;
+		height:88px;
+		background: #4ac179;
+	}
+	.btbox2{
+		position: absolute;
+		bottom: 0;
+		left: 428px;
+		width: 44px;
+		height:44px;
+		background: #8ae75a;
+	}
+	.btbox3{
+		position: absolute;
+		bottom: 0;
+		right: 328px;
+		width: 44px;
+		height:44px;
+		background: #8ae75a;
+	}
+	.btbox4{
+		position: absolute;
+		bottom: 0;
+		right: 240px;
+		width: 44px;
+		height:44px;
+		background: #4ac179;
+	}
+	.title1 h3{
+		background:url(../images/qm.png) no-repeat;
+	}
+	.obj1{
+		background:url(../images/ban2.png) no-repeat;
+	}
+	.title2 h3{
+		background:url(../images/zy.png) no-repeat;
+
+	}
+	.obj2{
+		background:url(../images/ban3.png) no-repeat;
+	}
+	.by{
+		width: 100%;
+		height:138px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: url(../images/by.png) no-repeat;
+	}
+	.ls{
+		width: 275px;
+		height:245px;
+		background:url(../images/a.png) no-repeat;
+		position: absolute;
+		left: 180px;
+		top:230px;
+		
+	}
+
+	.login{
+		float: right;
+		width: 340px;
+		height: 300px;
+		position: absolute;
+		right:100px;
+		top:150px;
+		background: #4ebffc;
+		border-radius: 5px;
+	}
+	.userBox{
+ 	width:308px;
+ 	height:40px;
+ 	
+ 	margin:0 auto;
+ 	margin-top:26px;
+ 	overflow: hidden;
+ 	font-size:0;
+ }
+ .userBox input{
+ 	padding-left:9px;
+ 	border:none;
+ }
+ .login .user{
+ 	width: 260px;
+ 	height:40px;
+ }
+ .userIcon{
+ 	display:inline-block;
+ 	width:35px;
+ 	height:40px;
+
+ 	float: left;
+ }
+.userBox .yanZ{
+	width:142px;
+	height:100%;
+}
+.shuzi{
+	margin-left:10px;
+	width:80px;
+	height:100%;
+	background:#B8E5FE;
+	border:none;
+}
+.userBox .h{
+	color:#fff;
+}
+.login-action{
+	width: 299px;
+	margin:0 auto;
+	margin-top:30px;
+}
+.login-action input{
+	border: 0;
+	background: #ffd850;
+	color: #5c4c12;
+	border-radius: 2px;
+	width: 299px;
+	height:38px;
+}

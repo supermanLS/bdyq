@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="./css/iconfont.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		'css3':true,
+		'navigation': true,
+		afterLoad:function(anchorLink, index){
+			if(index == 2){
+				$('.title').addClass('lx');
+				$('.obj').addClass('ly');
+			}
+			if(index == 3){
+				$('.title1').addClass('lx');
+				$('.obj1').addClass('ly');
+			}
+			if(index == 4){
+				$('.title2').addClass('lx');
+				$('.obj2').addClass('ly');
+			}
+		},
+		onLeave:function(index, direction){
+			if(index == 2){
+				$('.title').removeClass('lx');
+				$('.obj').removeClass('ly');
+			}
+			if(index == 3){
+				$('.title1').removeClass('lx');
+				$('.obj1').removeClass('ly');
+			}
+			if(index == 4){
+				$('.title2').removeClass('lx');
+				$('.obj2').removeClass('ly');
+			}
+		}
+	});
+});
+</script>
+<style>
+	.section1 { background: url(images/bg.jpg) 50%;}
+	.section2 { background: url(images/bg1.jpg) 50%;}
+	.section3 { background: url(images/bg2.jpg) 50%;}
+	.section4 { background: url(images/bg3.jpg) 50%;}
+</style>
+<body>
+	<div class="nav">
+		<div class="head">
+			<a href="javascript:;"></a>
+			<ul class="head-middle">
+				<li><a href="javscript:;">首页</a></li>
+				<li><a href="javscript:;">产品介绍</a></li>
+				<li><a href="javscript:;">用户版</a></li>
+			</ul>
+			<div class="headright">
+				<a href="javascript:;">手机客户端</a>
+				<a href="javascript:;">百度司南</a>
+				<a href="javascript:;">联系我们</a>
+				<a href="javascript:;">申请试用</a>
+			</div>
+		</div>
+	</div>
+	<div id="dowebok">
+		<div class="section section1">
+			<ul class="inner">
+				<li><img src="images/4.png" alt=""></li>
+				<li><img src="images/1.png" alt=""></li>
+				<li><img src="images/1.png" alt=""></li>
+				<li><img src="images/2.png" alt=""></li>
+				<li><img src="images/3.png" alt=""></li>
+			</ul>
+			<div class="baidu"></div>
+			<div class="zuoxia"></div>
+			<div class="youxia"></div>
+			<div class="lunchuan"></div>
+			<div class="login">
+                              <div class="userBox">
+                              <span class="userIcon"><img src="./images/201.jpg" alt=""></span>
+                              <input type="text" class="user"placeholder="用户名">
+                              </div>
+                              <div class="userBox">
+                              <span class="userIcon"><img src="./images/2016.jpg" alt=""></span>
+                              <input type="text" class="user"placeholder="密码">
+                              </div>
+                               <div class="userBox">
+                                    <input type="text" class="yanZ"placeholder="验证码">
+                                    <input type="text"class="shuzi"placeholder="PdEf">
+                                   
+                               </div>
+                               <div class="login-action">
+                                     <input type="submit">
+                               </div>
+                               <!-- login-action -->
+            		</div>
+			<div class="footer">
+				
+			</div>
+			<a href="javascript:;" class='jiantou'></a>
+	    </div>
+	    <div class="section section2">
+			<div class="title">
+				<h3></h3>
+				<div class="tnr">
+					<h4>数据收集与处理</h4>
+					<p>15年专业数据收集与语义分析技术积累<br>卓越极致，不断攀登</p>
+				</div>
+			</div>
+			<div class="obj">
+				
+			</div>
+			<div class="btbox"></div>
+			<div class="btbox1"></div>
+			<div class="btbox2"></div>
+			<div class="btbox3"></div>
+			<div class="btbox4"></div>
+			<a href="javascript:;" class='jiantou'></a>
+	    </div>
+	    <div class="section section3">
+			<div class="title  title1">
+				<h3></h3>
+				<div class="tnr">
+					<h4>舆情分析逻辑与架构</h4>
+					<p>声量诊断、传播分析、情感提炼、受众画像<br>有方法论，更有智慧</p>
+				</div>
+			</div>
+			<div class="obj obj1">
+				
+			</div>
+			<div class="by"></div>
+			<a href="javascript:;" class='jiantou'></a>
+	    </div>
+	    <div class="section section4">
+	    	<div class="ls"></div>
+			<div class="title  title2">
+				<h3></h3>
+				<div class="tnr">
+					<h4>专业数据可视化</h4>
+					<p>非凡的数据洞悉和可视化能力<br>精研数据，惊艳所见</p>
+				</div>
+			</div>
+			<div class="obj obj2">
+				
+			</div>
+			<a href="javascript:;" class='jiantou'></a>
+	    </div>
+	</div>
+	
+</body>
+</html>	
